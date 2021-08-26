@@ -7,7 +7,7 @@ import java.util.Random;
 
 import javax.swing.*;
 
-public class SnakePanel extends JPanel implements ActionListener, KeyListener {
+public class SnakeGamePanel extends JPanel implements ActionListener, KeyListener {
 
     static final int SCREEN_WIDTH = 600;
     static final int SCREEN_HEIGHT = 600;
@@ -25,7 +25,7 @@ public class SnakePanel extends JPanel implements ActionListener, KeyListener {
     Timer timer;
     Random random;
 
-    public SnakePanel() {
+    public SnakeGamePanel() {
         random = new Random();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
         this.setBackground(Color.BLACK);
@@ -211,7 +211,6 @@ public class SnakePanel extends JPanel implements ActionListener, KeyListener {
                     snakeInitDirection = 'D';
                 }
                 break;
-
         }
     }
 
